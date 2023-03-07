@@ -1,0 +1,26 @@
+[
+    {
+        "model": "harmoniousapi.soundscapeChordProgression",
+        "pk": 1,
+        "fields": {
+            "soundscape": 1,
+            "chordProgression": 1
+        }
+    },
+    {
+        "model": "harmoniousapi.soundscapeChordProgression",
+        "pk": 2,
+        "fields": {
+            "soundscape": 1,
+            "chordProgression": 2
+        }
+    },
+    {
+        "model": "harmoniousapi.soundscapeChordProgression",
+        "pk": 3,
+        "fields": {
+            "soundscape": 1,
+            "chordProgression": 3
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "model": "harmoniousapi.melodyTexture",
+        "pk": 1,
+        "fields": {
+            "name": "Ice",
+            "synthSetting1": 9,
+            "synthSetting2": 9,
+            "synthSetting3": 9
+        }
+    },
+    {
+        "model": "harmoniousapi.melodyTexture",
+        "pk": 2,
+        "fields": {
+            "name": "Fire",
+            "synthSetting1": 9,
+            "synthSetting2": 9,
+            "synthSetting3": 9
+        }
+    },
+    {
+        "model": "harmoniousapi.melodyTexture",
+        "pk": 3,
+        "fields": {
+            "name": "Wind",
+            "synthSetting1": 9,
+            "synthSetting2": 9,
+            "synthSetting3": 9
+        }
+    }
+]

@@ -1,0 +1,123 @@
+[
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 1,
+        "fields": {
+            "rootNote": "c",
+            "quality": "major",
+            "texture1filepath": "chords/blown_c_major.m4a",
+            "texture2filepath": "chords/glass_c_major.m4a",
+            "texture3filepath": "chords/marimba_c_major.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 2,
+        "fields": {
+            "rootNote": "d",
+            "quality": "minor",
+            "texture1filepath": "chords/blown_d_minor.m4a",
+            "texture2filepath": "chords/glass_d_minor.m4a",
+            "texture3filepath": "chords/marimba_d_minor.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 3,
+        "fields": {
+            "rootNote": "e",
+            "quality": "minor",
+            "texture1filepath": "chords/blown_e_minor.m4a",
+            "texture2filepath": "chords/glass_e_minor.m4a",
+            "texture3filepath": "chords/marimba_e_minor.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 4,
+        "fields": {
+            "rootNote": "f",
+            "quality": "major",
+            "texture1filepath": "chords/blown_f_major.m4a",
+            "texture2filepath": "chords/glass_f_major.m4a",
+            "texture3filepath": "chords/marimba_f_major.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 5,
+        "fields": {
+            "rootNote": "g",
+            "quality": "major",
+            "texture1filepath": "chords/blown_g_major.m4a",
+            "texture2filepath": "chords/glass_g_major.m4a",
+            "texture3filepath": "chords/marimba_g_major.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 6,
+        "fields": {
+            "rootNote": "a",
+            "quality": "minor",
+            "texture1filepath": "chords/blown_a_minor.m4a",
+            "texture2filepath": "chords/glass_a_minor.m4a",
+            "texture3filepath": "chords/marimba_a_minor.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 11,
+        "fields": {
+            "rootNote": "c",
+            "quality": "major7",
+            "texture1filepath": "chords/blown_c_major7.m4a",
+            "texture2filepath": "chords/glass_c_major7.m4a",
+            "texture3filepath": "chords/marimba_c_major7.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 12,
+        "fields": {
+            "rootNote": "d",
+            "quality": "minor7",
+            "texture1filepath": "chords/blown_d_minor7.m4a",
+            "texture2filepath": "chords/glass_d_minor7.m4a",
+            "texture3filepath": "chords/marimba_d_minor7.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 13,
+        "fields": {
+            "rootNote": "e",
+            "quality": "minor",
+            "texture1filepath": "chords/blown_e_minor7.m4a",
+            "texture2filepath": "chords/glass_e_minor7.m4a",
+            "texture3filepath": "chords/marimba_e_minor7.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 14,
+        "fields": {
+            "rootNote": "f",
+            "quality": "major7",
+            "texture1filepath": "chords/blown_f_major7.m4a",
+            "texture2filepath": "chords/glass_f_major7.m4a",
+            "texture3filepath": "chords/marimba_f_major7.m4a"
+        }
+    },
+    {
+        "model": "harmoniousapi.chord",
+        "pk": 16,
+        "fields": {
+            "rootNote": "a",
+            "quality": "minor7",
+            "texture1filepath": "chords/blown_a_minor7.m4a",
+            "texture2filepath": "chords/glass_a_minor7.m4a",
+            "texture3filepath": "chords/marimba_a_minor7.m4a"
+        }
+    }
+]
