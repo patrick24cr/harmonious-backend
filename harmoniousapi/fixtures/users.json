@@ -5,5 +5,12 @@
         "fields": {
             "uid": "Qx75UZAoPEdH0yj0S1YITumtIuz1"
         }
+    },
+    {
+        "model": "harmoniousapi.user",
+        "pk": 2,
+        "fields": {
+            "uid": "testuser29423804923"
+        }
     }
 ]

@@ -9,5 +9,16 @@
             "melodyNotes": "03660003236700",
             "melodyTexture": 1
         }
+    },
+    {
+        "model": "harmoniousapi.soundscape",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "title": "Astronaut's Regret",
+            "chordTexture": 1,
+            "melodyNotes": "036347703236700",
+            "melodyTexture": 2
+        }
     }
 ]
