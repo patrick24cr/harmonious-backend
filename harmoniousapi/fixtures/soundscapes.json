@@ -1,0 +1,13 @@
+[
+    {
+        "model": "harmoniousapi.soundscape",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "title": "Coffee Shop Vibes",
+            "chordTexture": 2,
+            "melodyNotes": "03660003236700",
+            "melodyTexture": 1
+        }
+    }
+]

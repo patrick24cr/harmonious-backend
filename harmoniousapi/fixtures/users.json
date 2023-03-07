@@ -1,0 +1,9 @@
+[
+    {
+        "model": "harmoniousapi.user",
+        "pk": 1,
+        "fields": {
+            "uid": "Qx75UZAoPEdH0yj0S1YITumtIuz1"
+        }
+    }
+]

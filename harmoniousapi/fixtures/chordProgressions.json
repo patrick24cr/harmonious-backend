@@ -1,0 +1,90 @@
+[
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 1,
+        "fields": {
+            "name": "Easygoing",
+            "firstChord": 1,
+            "secondChord": 6,
+            "thirdChord": 4,
+            "fourthChord": 5
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 2,
+        "fields": {
+            "name": "Nocturnal",
+            "firstChord": 14,
+            "secondChord": 5,
+            "thirdChord": 16,
+            "fourthChord": 5
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 3,
+        "fields": {
+            "name": "Earnest",
+            "firstChord": 4,
+            "secondChord": 1,
+            "thirdChord": 5,
+            "fourthChord": 6
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 4,
+        "fields": {
+            "name": "Hopeful",
+            "firstChord": 12,
+            "secondChord": 5,
+            "thirdChord": 12,
+            "fourthChord": 5
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 5,
+        "fields": {
+            "name": "Circular",
+            "firstChord": 4,
+            "secondChord": 3,
+            "thirdChord": 2,
+            "fourthChord": 5
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 6,
+        "fields": {
+            "name": "Bittersweet",
+            "firstChord": 14,
+            "secondChord": 1,
+            "thirdChord": 13,
+            "fourthChord": 16
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 7,
+        "fields": {
+            "name": "Foggy",
+            "firstChord": 3,
+            "secondChord": 6,
+            "thirdChord": 3,
+            "fourthChord": 6
+        }
+    },
+    {
+        "model": "harmoniousapi.chordProgression",
+        "pk": 8,
+        "fields": {
+            "name": "Desolate",
+            "firstChord": 1,
+            "secondChord": 3,
+            "thirdChord": 6,
+            "fourthChord": 16
+        }
+    }
+]
