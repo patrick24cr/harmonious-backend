@@ -19,8 +19,9 @@ class SoundscapeView(ViewSet):
 
         soundscapes = Soundscape.objects.all()
         uid_query = request.query_params.get('uid', None)
+        print(uid_query)
         if uid_query is not None:
-          soundscapes = soundscapes.filter(user__uid=uid_query)
+          soundscapes = soundscapes.filter(user__uid__contains=uid_query)
         serializer = Soundscapeserializer(soundscapes, many=True)
         return Response(serializer.data)
 
