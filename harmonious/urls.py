@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
+from harmoniousapi.views import check_user, register_user
 from rest_framework import routers
 from harmoniousapi.views import UserView, SoundscapeView
 
@@ -24,6 +25,8 @@ router.register(r'users', UserView, 'user')
 router.register(r'soundscapes', SoundscapeView, 'soundscape')
 
 urlpatterns = [
+    path('register', register_user),
+    path('checkuser', check_user),
     path('admin/', admin.site.urls),
     path('', include(router.urls))
 ]
