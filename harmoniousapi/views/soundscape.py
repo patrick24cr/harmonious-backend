@@ -1,4 +1,4 @@
-from django.http import HttpResponseServerError
+# from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
@@ -21,7 +21,7 @@ class SoundscapeView(ViewSet):
         uid_query = request.query_params.get('uid', None)
         print(uid_query)
         if uid_query is not None:
-          soundscapes = soundscapes.filter(user__uid__contains=uid_query)
+            soundscapes = soundscapes.filter(user__uid__contains=uid_query)
         serializer = Soundscapeserializer(soundscapes, many=True)
         return Response(serializer.data)
 
@@ -58,4 +58,4 @@ class Soundscapeserializer(serializers.ModelSerializer):
     class Meta:
         model = Soundscape
         fields = ('id', 'user', 'title', 'chordTexture', 'melodyNotes', 'melodyTexture')
-        depth = 1
+        depth = 0

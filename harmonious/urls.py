@@ -18,11 +18,12 @@ from django.urls import path
 from django.conf.urls import include
 from harmoniousapi.views import check_user, register_user
 from rest_framework import routers
-from harmoniousapi.views import UserView, SoundscapeView
+from harmoniousapi.views import UserView, SoundscapeView, SoundscapeChordProgressionView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UserView, 'user')
 router.register(r'soundscapes', SoundscapeView, 'soundscape')
+router.register(r'soundscapeChordProgressions', SoundscapeChordProgressionView, 'soundscapeChordProgression')
 
 urlpatterns = [
     path('register', register_user),
