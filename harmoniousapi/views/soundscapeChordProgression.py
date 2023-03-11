@@ -22,7 +22,11 @@ class SoundscapeChordProgressionView(ViewSet):
         print(pk_query)
         if pk_query is not None:
             soundscapeChordProgressions = soundscapeChordProgressions.filter(soundscape=pk_query)
+        
+        detail_query = request.query_params.get('detail', None)
         serializer = SoundscapeChordProgressionserializer(soundscapeChordProgressions, many=True)
+        if detail_query is not None:
+            serializer = SoundscapeChordProgressionserializer2(soundscapeChordProgressions, many=True)
         return Response(serializer.data)
 
     def create(self, request):
@@ -56,3 +60,9 @@ class SoundscapeChordProgressionserializer(serializers.ModelSerializer):
         model = SoundscapeChordProgression
         fields = ('id', 'soundscape', 'chordProgression')
         depth = 0
+
+class SoundscapeChordProgressionserializer2(serializers.ModelSerializer):
+    class Meta:
+        model = SoundscapeChordProgression
+        fields = ('id','chordProgression')
+        depth = 2
