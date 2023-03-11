@@ -2,7 +2,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from harmoniousapi.models import SoundscapeChordProgression
+from harmoniousapi.models import SoundscapeChordProgression, Soundscape, ChordProgression
 
 class SoundscapeChordProgressionView(ViewSet):
 
@@ -28,11 +28,8 @@ class SoundscapeChordProgressionView(ViewSet):
     def create(self, request):
 
         soundscapeChordProgression = SoundscapeChordProgression.objects.create(
-            user=request.data["user"],
-            title=request.data["title"],
-            chordTexture=request.data["chordTexture"],
-            melodyNotes=request.data["melodyNotes"],
-            melodyTexture=request.data["melodyTexture"],
+            soundscape=Soundscape.objects.get(pk=request.data["soundscape"]),
+            chordProgression=ChordProgression.objects.get(pk=request.data["chordProgression"]),
         )
         serializer = SoundscapeChordProgressionserializer(soundscapeChordProgression)
         return Response(serializer.data)

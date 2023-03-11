@@ -9,7 +9,7 @@ class UserView(ViewSet):
     def retrieve(self, request, pk):
 
         try:
-            user = User.objects.get(pk=pk)
+            user = User.objects.get(uid=request.data["uid"])
             serializer = Userserializer(user)
             return Response(serializer.data)
         except User.DoesNotExist as ex:
