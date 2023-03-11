@@ -2,7 +2,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from harmoniousapi.models import Soundscape
+from harmoniousapi.models import Soundscape, MelodyTexture, User
 
 class SoundscapeView(ViewSet):
 
@@ -28,11 +28,11 @@ class SoundscapeView(ViewSet):
     def create(self, request):
 
         soundscape = Soundscape.objects.create(
-            user=request.data["user"],
+            user=User.objects.get(uid=request.data["user"]),
             title=request.data["title"],
             chordTexture=request.data["chordTexture"],
             melodyNotes=request.data["melodyNotes"],
-            melodyTexture=request.data["melodyTexture"],
+            melodyTexture=MelodyTexture.objects.get(pk=request.data["melodyTexture"]),
         )
         serializer = Soundscapeserializer(soundscape)
         return Response(serializer.data)
@@ -40,11 +40,11 @@ class SoundscapeView(ViewSet):
     def update(self, request, pk):
 
         soundscape = Soundscape.objects.get(pk=pk)
-        soundscape.title=request.data["title"],
-        soundscape.chordTexture=request.data["chordTexture"],
-        soundscape.melodyNotes=request.data["melodyNotes"],
-        soundscape.melodyTexture=request.data["melodyTexture"],
-        # need to add if statement checking for permission to update
+        soundscape.title = request.data["title"]
+        soundscape.chordTexture = request.data["chordTexture"]
+        soundscape.melodyNotes = request.data["melodyNotes"]
+        soundscape.melodyTexture = MelodyTexture.objects.get(pk=request.data["melodyTexture"])
+        # need to add if statement checking for permission to update?
         soundscape.save()
         
         return Response(None, status=status.HTTP_204_NO_CONTENT)
