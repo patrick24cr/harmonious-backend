@@ -65,4 +65,4 @@ class SoundscapeChordProgressionserializer2(serializers.ModelSerializer):
     class Meta:
         model = SoundscapeChordProgression
         fields = ('id','chordProgression')
-        depth = 2
+        depth = 1
