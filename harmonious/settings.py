@@ -49,6 +49,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:3000',
     'https://harmonious-client.herokuapp.com/',
     'https://keen-granita-e513e5.netlify.app',
+    'https://harmoniousvolt.netlify.app/',
 )
 
 MIDDLEWARE = [
