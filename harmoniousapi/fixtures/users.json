@@ -3,21 +3,21 @@
         "model": "harmoniousapi.user",
         "pk": 1,
         "fields": {
-            "uid": "Qx75UZAoPEdH0yj0S1YITumtIuz1"
+            "uid": "removed1"
         }
     },
     {
         "model": "harmoniousapi.user",
         "pk": 2,
         "fields": {
-            "uid": "testuser29423804923"
+            "uid": "removed2"
         }
     },
     {
         "model": "harmoniousapi.user",
         "pk": 3,
         "fields": {
-            "uid": "pEEcc70tkKYrCSzXatNbi6kCVcA2"
+            "uid": "removed3"
         }
     }
 ]
